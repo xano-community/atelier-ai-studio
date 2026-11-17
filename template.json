@@ -1,0 +1,164 @@
+{
+  "name": "Atelier",
+  "track": "starter",
+  "signature": "library",
+  "screens": [
+    { "name": "Home", "path": "/" },
+    { "name": "Playground", "path": "/playground" },
+    { "name": "Recipes", "path": "/recipes" },
+    { "name": "New recipe", "path": "/recipes/new" },
+    { "name": "Recipe", "path": "/recipes/:slug" },
+    { "name": "Edit recipe", "path": "/recipes/:slug/edit" },
+    { "name": "Run", "path": "/runs/:id" },
+    { "name": "Library", "path": "/library" },
+    { "name": "Library item", "path": "/library/:id" },
+    { "name": "Knowledge", "path": "/knowledge" },
+    { "name": "Knowledge sources", "path": "/knowledge/sources" },
+    { "name": "Brand kit", "path": "/brand" },
+    { "name": "Usage", "path": "/usage" }
+  ],
+  "roles": ["admin", "member", "guest"],
+  "permissions": [
+    "team.manage",
+    "studio.run",
+    "knowledge.ask",
+    "knowledge.manage",
+    "recipes.manage",
+    "library.approve",
+    "usage.read",
+    "budgets.manage"
+  ],
+  "agentTools": [
+    "whats_new",
+    "my_notifications",
+    "request_role_change",
+    "list_recipes",
+    "run_recipe",
+    "generate",
+    "ask_knowledge",
+    "find_assets",
+    "get_asset",
+    "check_run",
+    "my_usage",
+    "check_approval"
+  ],
+  "assistantTools": [
+    "recent_activity",
+    "unread_notifications",
+    "browse_recipes",
+    "start_recipe",
+    "make_output",
+    "ask_knowledge_base",
+    "search_library",
+    "read_library_item",
+    "check_on_run",
+    "my_spend",
+    "check_my_approval"
+  ],
+  "approvals": ["change_role", "costly_run", "over_budget"],
+  "live": [
+    "ai_run",
+    "ai_step",
+    "asset",
+    "kb_source",
+    "recipe",
+    "brand",
+    "budget",
+    "price",
+    "settings",
+    "key",
+    "user",
+    "invite"
+  ],
+  "notifications": ["approval", "run", "knowledge", "invite"],
+  "audit": {
+    "liveWriteExempt": [
+      {
+        "table": "ai_run",
+        "reason": "A run's own state, written many times a minute and often private to one person: studio/changed publishes an ids-only frame on its owner's channel, and on app only when the team can see it."
+      },
+      {
+        "table": "ai_step",
+        "reason": "A step's state moves with every claim, send and result: studio/changed tells the run's owner (and the team for a shared run) with an ids-only frame."
+      },
+      {
+        "table": "ledger",
+        "reason": "The spend gate's reservations and charges, written on every model call: Usage and the run page refetch on the run's studio/changed frame, and nobody else's screen shows a ledger row."
+      },
+      {
+        "table": "budget_month",
+        "reason": "Running totals moved by every reserve, charge and release: studio/changed publishes the budget change to its owner, and the activity feed would fill with one row per call."
+      }
+    ]
+  },
+  "qa": {
+    "maxLinks": 20,
+    "overview": "/",
+    "workspace": {
+      "checks": [
+        {
+          "gate": "spend gate",
+          "run": ["frontend/scripts/spend-check.mjs", "--backend", "{backend}"]
+        },
+        {
+          "gate": "model calls only in wrappers",
+          "run": ["frontend/scripts/ai-calls-check.mjs", "--self-test"]
+        },
+        {
+          "gate": "every kind of call",
+          "target": "keyed",
+          "run": ["frontend/scripts/steps-check.mjs", "--backend", "{backend}", "--skip", "video,music"]
+        },
+        {
+          "gate": "playground",
+          "target": "keyed",
+          "run": ["frontend/scripts/playground-check.mjs", "--app", "{frontend}", "--shots", "{out}/playground"]
+        },
+        {
+          "gate": "knowledge",
+          "target": "keyed",
+          "run": ["frontend/scripts/knowledge-check.mjs", "--backend", "{backend}", "--assets", "frontend/scripts/assets"]
+        },
+        {
+          "gate": "library",
+          "run": ["frontend/scripts/library-check.mjs", "--backend", "{backend}", "--app", "{frontend}", "--no-make", "--shots", "{out}/library"]
+        },
+        {
+          "gate": "recipes",
+          "target": "keyed",
+          "run": ["frontend/scripts/recipes-check.mjs", "--backend", "{backend}"]
+        },
+        {
+          "gate": "assistant",
+          "target": "keyed",
+          "run": ["frontend/scripts/assistant-check.mjs", "--backend", "{backend}"]
+        }
+      ]
+    }
+  },
+  "review": {
+    "bar": 4.5,
+    "floor": 4,
+    "runs": 4,
+    "views": [
+      { "name": "home", "bar": 4.75 },
+      { "name": "playground", "bar": 4.75 },
+      { "name": "recipes", "bar": 4.75 },
+      { "name": "library", "bar": 4.75 },
+      { "name": "knowledge", "bar": 4.75 }
+    ],
+    "capture": [
+      { "name": "home", "view": "home", "path": "/", "actions": [{ "wait": "[data-testid='home'] [data-kit='stat-card']" }] },
+      { "name": "playground", "view": "playground", "path": "/playground", "actions": [{ "wait": "[data-testid='playground-toolbar']" }] },
+      { "name": "recipes", "view": "recipes", "path": "/recipes", "actions": [{ "click": "[data-testid='recipe-row-product-launch-kit']" }, { "wait": "[data-testid='recipe-detail']" }] },
+      { "name": "library", "view": "library", "path": "/library", "actions": [{ "wait": "[data-testid='asset-tile']" }] },
+      { "name": "library-item", "view": "library", "path": "/library", "actions": [{ "click": "[data-testid='asset-tile']" }, { "frames": 3 }, { "wait": "[data-testid='asset-sheet']" }] },
+      { "name": "knowledge", "view": "knowledge", "path": "/knowledge", "actions": [{ "wait": "[data-testid='knowledge-ask']" }] },
+      { "name": "knowledge-sources", "view": "knowledge", "path": "/knowledge/sources", "actions": [{ "wait": "[data-testid='knowledge-sources']" }] },
+      { "name": "usage", "path": "/usage", "actions": [{ "wait": "[data-testid='usage-total']" }] },
+      { "name": "brand", "path": "/brand", "actions": [{ "wait": "[data-testid='brand-page']" }] },
+      { "name": "run", "path": "/", "actions": [{ "click": "main a[href^='/runs/']" }, { "wait": "[data-testid='run-page']" }] },
+      { "name": "palette", "path": "/", "actions": [{ "press": "Control+k" }, { "wait": "[cmdk-root]" }] }
+    ]
+  }
+}

@@ -1,0 +1,1363 @@
+{
+  "version": 1,
+  "objects": {
+    "app:Authentication": {
+      "guid": "418bb3d99f5c721ab78c30d97d651e90",
+      "canonical": "authn",
+      "canonical_source": "code",
+      "guid_source": "code"
+    },
+    "app:Chatbot": {
+      "guid": "d38a9e1caf83cf798a8883cbb0e83b99",
+      "canonical": "chat",
+      "canonical_source": "code"
+    },
+    "app:MCP OAuth": {
+      "guid": "c28ec38f91b73b91d20ba717a4ef256c",
+      "canonical": "mcp-oauth-ai-studio",
+      "canonical_source": "code"
+    },
+    "app:agent": {
+      "guid": "8fe6c1adc68a153ab4b46550a7faf4b3",
+      "canonical": "agent",
+      "canonical_source": "code"
+    },
+    "app:app": {
+      "guid": "9cfec81047ef194e6f8525859a73c4e2",
+      "canonical": "app",
+      "canonical_source": "code"
+    },
+    "app:approvals": {
+      "guid": "e78457b07ab49187cf3102d207f40454",
+      "canonical": "approvals",
+      "canonical_source": "code"
+    },
+    "app:knowledge": {
+      "guid": "77683ff5485934d819702244868f2492",
+      "canonical": "knowledge",
+      "canonical_source": "code"
+    },
+    "app:library": {
+      "guid": "cc7c7ec8d8d38f065bd23d3cc1142cda",
+      "canonical": "library",
+      "canonical_source": "code"
+    },
+    "app:rbac": {
+      "guid": "e229bc569c09d4eee6b5d86b87faf61a",
+      "canonical": "rbac",
+      "canonical_source": "code"
+    },
+    "app:settings": {
+      "guid": "e97e40371b825156d5e39cf2b82eb877",
+      "canonical": "settings",
+      "canonical_source": "code"
+    },
+    "app:studio": {
+      "guid": "e59dd23267f1ed3d07a7d53ec78d8b2c",
+      "canonical": "studio",
+      "canonical_source": "code"
+    },
+    "app:studio-loop": {
+      "guid": "4286254ca5aac610d52861fac7221eae",
+      "canonical": "studio-loop",
+      "canonical_source": "code"
+    },
+    "channel:live|app": {
+      "guid": "4ee152ab7c9319f847d302a24a3dcfdd"
+    },
+    "channel:live|rooms/{room}": {
+      "guid": "fd8a835249ae79c78f5f83e833e6a283"
+    },
+    "channel:live|users/{user_id}": {
+      "guid": "5a8be675f38a010d734f93811db619ec"
+    },
+    "dbo:access_link": {
+      "guid": "428c3b2913309fe6992de3caa9690dec"
+    },
+    "dbo:account": {
+      "guid": "f2f78af06c7c59b550823db5edae97bc",
+      "guid_source": "code"
+    },
+    "dbo:activity": {
+      "guid": "40742ffb4f73931a841ced17dc05c22b"
+    },
+    "dbo:agent_activity": {
+      "guid": "ddf573d30230681458ecc3ce1b622148"
+    },
+    "dbo:agent_connection": {
+      "guid": "6bb36e51fa851cc92dca37383ac2e082"
+    },
+    "dbo:ai_run": {
+      "guid": "da4d7f60adb748f1b4878a9d4ee4f20c"
+    },
+    "dbo:ai_step": {
+      "guid": "a240b4262c65f51bfe022cda7d543f29"
+    },
+    "dbo:approval": {
+      "guid": "f139daa26901db948305de7008aca3b0"
+    },
+    "dbo:asset": {
+      "guid": "e2f9e7353aed9a26765bdef1c90431bf"
+    },
+    "dbo:brand": {
+      "guid": "81e404bcc0ec251188c24bbe97ce9215"
+    },
+    "dbo:brand_image": {
+      "guid": "081ae3cd81fd3dacf62eeb7f17baa06f"
+    },
+    "dbo:budget_month": {
+      "guid": "fd20146d9797157b9168a1d44bb44034"
+    },
+    "dbo:conversation": {
+      "guid": "82dcb96c2b194384d632c35b67d6bd52"
+    },
+    "dbo:conversation_message": {
+      "guid": "9212556e48dcdde206e1f564d3de8eb3"
+    },
+    "dbo:demo_persona": {
+      "guid": "5214cb34a1a30ecfb614ff09d270340e"
+    },
+    "dbo:easel_turn": {
+      "guid": "07948cb5612239c8bffeccf5fd5fdde5"
+    },
+    "dbo:event_log": {
+      "guid": "e9148697952846994def7eb0a467d6cd",
+      "guid_source": "code"
+    },
+    "dbo:kb_passage": {
+      "guid": "bf169d2d69523c521d98e3220ccd354e"
+    },
+    "dbo:kb_source": {
+      "guid": "4aa9c7309924f54378383d151ed83c38"
+    },
+    "dbo:ledger": {
+      "guid": "301e98a309f215b1d5c52f0f091fdd16"
+    },
+    "dbo:media_blob": {
+      "guid": "c8001e161a5923b00998b17a4f0f0ae7"
+    },
+    "dbo:notification": {
+      "guid": "82aa02f0fec38d41c31e06e20dbbc94b"
+    },
+    "dbo:price": {
+      "guid": "adc6c876a10c38d77181f284616db441"
+    },
+    "dbo:recipe": {
+      "guid": "7912f9874f3a019b42f2109d5d41b958"
+    },
+    "dbo:recipe_step": {
+      "guid": "91bc1459b48d74425a0cf8190038b91c"
+    },
+    "dbo:role_change": {
+      "guid": "be3f462b365b59b14ab9c8c851fb4fe1"
+    },
+    "dbo:user": {
+      "guid": "efb558104909137dac95907814c26051",
+      "guid_source": "code"
+    },
+    "dbo:worker": {
+      "guid": "1575d716643942621dd445426c5e1c12"
+    },
+    "dbo:workspace_setting": {
+      "guid": "c12607c3844188c2e248aad264abdd47"
+    },
+    "function:Getting Started Template/create_event_log": {
+      "guid": "19bb274c20b194d7fa03ca4bafb3ac4c",
+      "guid_source": "code"
+    },
+    "function:agent/check_key": {
+      "guid": "05d8edd2bb5af96810184e6a60ef6cd1"
+    },
+    "function:agent/connect": {
+      "guid": "97a45c913f83af24b914074135377557"
+    },
+    "function:agent/revoke": {
+      "guid": "12b8f05147d4f16122aa088255d26b82"
+    },
+    "function:agent/sign_in_connection": {
+      "guid": "429315c57b863c0686fbfee1fbda5582"
+    },
+    "function:ai/embedding": {
+      "guid": "27d1afdbf49277c563bd89876d7f7c8c"
+    },
+    "function:ai/gateway_error": {
+      "guid": "b8950b3a3d4b8af89dc490cfdda9feb7"
+    },
+    "function:ai/image": {
+      "guid": "d4e8507a2ddf6b298d2d7620b901b36c"
+    },
+    "function:ai/music": {
+      "guid": "587e4421e7efc36209364911d9f3686f"
+    },
+    "function:ai/rerank": {
+      "guid": "55a2743efe5f0f536d0b6b8b2407dc3d"
+    },
+    "function:ai/speech": {
+      "guid": "fb4399bcb47647513bc4bd1f228fb358"
+    },
+    "function:ai/text": {
+      "guid": "67ed1329782ce4d4b2ad8efd2e02eb98"
+    },
+    "function:ai/transcribe": {
+      "guid": "e8d11e04002a0a321340b2f03b3e4777"
+    },
+    "function:ai/video": {
+      "guid": "b52d8357b4e8f0f67c44197170d2c5f0"
+    },
+    "function:app/changed": {
+      "guid": "31990c91200aa3794b2890548916f07b"
+    },
+    "function:app/notify": {
+      "guid": "a6b4f44eaa2c407c288548684186f917"
+    },
+    "function:app/notify_roles": {
+      "guid": "f3bf9a0680d403d6370684d01db9fb60"
+    },
+    "function:approvals/apply_edit": {
+      "guid": "31e1f6ecb958cf60694ff0750037d9fe"
+    },
+    "function:approvals/decide": {
+      "guid": "f0ebceefae0c19d33c76748ff68ac46f"
+    },
+    "function:approvals/request": {
+      "guid": "e9a99c0259ffd2ebcc9f190070ce8195"
+    },
+    "function:brand/add_image": {
+      "guid": "b49b9334501c04c51b469cf638eccdbe"
+    },
+    "function:brand/compose": {
+      "guid": "335f1c80dace526f1f7b079ea4df359f"
+    },
+    "function:brand/image_data": {
+      "guid": "95030fbc185bb4e5bc6f07964b6f60d3"
+    },
+    "function:brand/read": {
+      "guid": "614222b4d2785f4547682ac4cc36b4b0"
+    },
+    "function:brand/remove_image": {
+      "guid": "058b849150260a58eecd79b1ed4ac7ae"
+    },
+    "function:brand/save": {
+      "guid": "ee44ceb9fbb8fa01c4be2722e1031700"
+    },
+    "function:chatbot/generate_reply": {
+      "guid": "dd355b0c0de054e837cf0fbdbb7eeea8"
+    },
+    "function:easel/close_turn": {
+      "guid": "21f96d0582e5089330d52802ac9ac5da"
+    },
+    "function:easel/open_turn": {
+      "guid": "cbedc59fad02198e955b93b595219b6a"
+    },
+    "function:easel/ready": {
+      "guid": "6069339841f04562f4bbfe430700dae3"
+    },
+    "function:easel/setup": {
+      "guid": "0e14058e087f34b7feb961754a5377c6"
+    },
+    "function:easel/turn_usage": {
+      "guid": "6040f61ca3537639fc3de180bd9f68a5"
+    },
+    "function:knowledge/absorb": {
+      "guid": "6d2027617296954e83bcc8fbf41475db"
+    },
+    "function:knowledge/add": {
+      "guid": "2450fd27647e0bd9561a07c3c55c6cba"
+    },
+    "function:knowledge/ask": {
+      "guid": "1351cc07d9f3f7abf9c2a9b3e867a502"
+    },
+    "function:knowledge/ask_compose": {
+      "guid": "1acba7dc85d5aab63dbab7764f123dbe"
+    },
+    "function:knowledge/ask_retrieve": {
+      "guid": "8b2dc8e3c5746005315eda2b46f189eb"
+    },
+    "function:knowledge/ask_start": {
+      "guid": "3c9f83361908505842e9215637151ef0"
+    },
+    "function:knowledge/ask_view": {
+      "guid": "0b1871950a678ca9a5f8024f3cd08ba7"
+    },
+    "function:knowledge/chunk": {
+      "guid": "47a0a7e7ed4b69f87167eb5bd461d4c7"
+    },
+    "function:knowledge/recent_questions": {
+      "guid": "623fd4ba67c583869811d8f5df8726d0"
+    },
+    "function:knowledge/retry": {
+      "guid": "ba364ac4d2ee1aebc10993fcd8339f1f"
+    },
+    "function:knowledge/settle": {
+      "guid": "350d65283f7efb3642ae1b6c642a2047"
+    },
+    "function:knowledge/tidy": {
+      "guid": "b5c1596afe08aa54738ec91f5f644836"
+    },
+    "function:knowledge/transcript_parse": {
+      "guid": "88ca1be8b0babcc6f16fda7e21397902"
+    },
+    "function:library/approve": {
+      "guid": "3ca7882380acef3b46d0a35dda41f5f1"
+    },
+    "function:library/delete": {
+      "guid": "dbcd2acc54d2ccd2c37a768f0858121b"
+    },
+    "function:library/facets": {
+      "guid": "51cf4720277f7399db960de920e35908"
+    },
+    "function:library/find": {
+      "guid": "afefd9becb510a66baa5279a752e1c71"
+    },
+    "function:library/get": {
+      "guid": "92c1de9ac156e696acb3115f5ddb364c"
+    },
+    "function:library/link": {
+      "guid": "038fc1e4027ebf8a874e1d3e79e9796f"
+    },
+    "function:library/store": {
+      "guid": "057d8d6300304de490a7803385b82aa9"
+    },
+    "function:library/text": {
+      "guid": "408c1da6b5606d8bccec2c7e99635015"
+    },
+    "function:media/bytes": {
+      "guid": "3ee6e496b4f96dce0e6f137d70823548"
+    },
+    "function:media/link": {
+      "guid": "cdbbd7f1c07944b87ac14e7e50a83a55"
+    },
+    "function:media/storage_check": {
+      "guid": "04405eff6af7fac2fdfcc896727a279a"
+    },
+    "function:playground/history": {
+      "guid": "860b2424ff394b6463306f6a076b2ea9"
+    },
+    "function:playground/use": {
+      "guid": "3afeefdb68c63c630cf4157f4f9ddc19"
+    },
+    "function:rbac/permissions": {
+      "guid": "72dad0994c746b4ea289c8ca81718074"
+    },
+    "function:rbac/set_role": {
+      "guid": "6409af4a083aa634acf5d9928cecbb2b"
+    },
+    "function:recipes/delete": {
+      "guid": "7aba81ffcbc72a90a208426f18d45f6b"
+    },
+    "function:recipes/estimate": {
+      "guid": "df83256f6f2b4eb2130a9fc98ea8732e"
+    },
+    "function:recipes/fill_step": {
+      "guid": "705a0e42787b61912dda5752b3b767f8"
+    },
+    "function:recipes/list": {
+      "guid": "b7a06f74ff7d527b59f59e1fa999695a"
+    },
+    "function:recipes/plan": {
+      "guid": "ca70daf4cbdb8bc4702a745593b343a9"
+    },
+    "function:recipes/save": {
+      "guid": "31adc2664fa86a4f071f7929c6561fe1"
+    },
+    "function:recipes/start": {
+      "guid": "7899aafd3d02ec15050659c09cea37d6"
+    },
+    "function:recipes/view": {
+      "guid": "4504daeffd690d808da228be185c5134"
+    },
+    "function:runs/approve_costly": {
+      "guid": "baf939ee2512913af5484a9b4b00a85e"
+    },
+    "function:runs/approve_over_budget": {
+      "guid": "3a645cdf7ffb53182d92bf0c4607e675"
+    },
+    "function:runs/ask_admin": {
+      "guid": "714f349fb2825abb0dd65971ec291bf4"
+    },
+    "function:runs/claim_step": {
+      "guid": "973e927499e76961d5f248c2e9923215"
+    },
+    "function:runs/close_decided": {
+      "guid": "758408d109eac26e8f896d05cfe05f04"
+    },
+    "function:runs/confirm": {
+      "guid": "5d65b8584b4ddf1ff8bbb786e0d0d952"
+    },
+    "function:runs/derive_key": {
+      "guid": "f5e9c51bc02b9e3e19b14d7156174119"
+    },
+    "function:runs/drive": {
+      "guid": "71e0405be190e93e66243685be2871a4"
+    },
+    "function:runs/execute_step": {
+      "guid": "4876ca827c900d6667850a2ac3f9cda4"
+    },
+    "function:runs/expire_approvals": {
+      "guid": "6514dd57c45d4033694a751da08eb84e"
+    },
+    "function:runs/finish": {
+      "guid": "d178997552b5b9ff4e7a91a713fcff20"
+    },
+    "function:runs/finish_samples": {
+      "guid": "5b715e806bd56b72b2efa23b2c86de06"
+    },
+    "function:runs/gate": {
+      "guid": "f4671a35d11b178d51400738afc649d1"
+    },
+    "function:runs/go": {
+      "guid": "d8dabb120f561bc155d1437273d3f774"
+    },
+    "function:runs/record_step": {
+      "guid": "32c29e9612e4cd5ae96ce04a64289457"
+    },
+    "function:runs/release_unsent": {
+      "guid": "17393e4c9d6513233e4b85b160e22375"
+    },
+    "function:runs/retry": {
+      "guid": "b7ae750c224f4dc7b1b8c924c5f8d425"
+    },
+    "function:runs/start": {
+      "guid": "200bf12b84516d50a7d203880e902d19"
+    },
+    "function:runs/step_result": {
+      "guid": "52212f277b35db1f4382c2ea62d8de32"
+    },
+    "function:runs/stop": {
+      "guid": "5fbd88620c25ef43fdafface9d117b20"
+    },
+    "function:runs/sweep": {
+      "guid": "576a9709c48f5af85c889ee172362a2a"
+    },
+    "function:runs/view": {
+      "guid": "9a9b4981f9379a8b83ce92dc4b465ae9"
+    },
+    "function:setup/run": {
+      "guid": "51e982c082044b1eb107e9bb95018458"
+    },
+    "function:spend/begin": {
+      "guid": "b34c0f7cb48bfdac733c13ea2e75c6db"
+    },
+    "function:spend/dollars": {
+      "guid": "689f2f475a7ed872516160616a994123"
+    },
+    "function:spend/estimate": {
+      "guid": "351b48f14bed661ec1bea580f1f538c5"
+    },
+    "function:spend/list_prices": {
+      "guid": "6382690b394abbc6658c3362a6489e58"
+    },
+    "function:spend/month_rows": {
+      "guid": "58d616489f029e9aeb2b663aff9ef150"
+    },
+    "function:spend/raise_for_run": {
+      "guid": "0dd7654cdeec5e70c93151f1e1d5b2df"
+    },
+    "function:spend/rate": {
+      "guid": "2e1a8d4458d69e1f7b53a0aab3fdf347"
+    },
+    "function:spend/reconcile": {
+      "guid": "7d7080f4311a72a9a67a66044abb5099"
+    },
+    "function:spend/release": {
+      "guid": "4be62fd122f1390ca88b9c18a5bf0fd2"
+    },
+    "function:spend/set_budgets": {
+      "guid": "8121dc7b7c0571acc0b9aaa44bc545a2"
+    },
+    "function:spend/set_person_budget": {
+      "guid": "1462fcf87996b49a9f0a76dfa15a1186"
+    },
+    "function:spend/set_price": {
+      "guid": "f29d11e5f5992297d9452310d305f468"
+    },
+    "function:spend/settle": {
+      "guid": "6de898914e413bf57f26b81f1d29c1d9"
+    },
+    "function:spend/usage": {
+      "guid": "bcbc46c1caa9247eee23413a2d9227b4"
+    },
+    "function:studio/agent_gate": {
+      "guid": "26b14ae0627e8ead4dc372dcefbd35c9"
+    },
+    "function:studio/ai_state": {
+      "guid": "73fbb9d47659a8c5c920b1371b8b65fe"
+    },
+    "function:studio/ai_status": {
+      "guid": "239e96bb4c9bc2e0ed1d81de26a48f3b"
+    },
+    "function:studio/ask_knowledge": {
+      "guid": "e90b176f9782b7546be3f97fc03031d7"
+    },
+    "function:studio/changed": {
+      "guid": "35a2f2a5e4e05603927034f4a9133338"
+    },
+    "function:studio/check_ai": {
+      "guid": "f7ad1e902cb7714d391c5dbeda315f5c"
+    },
+    "function:studio/check_models": {
+      "guid": "9b70c2804e65a354f89dd43fea464849"
+    },
+    "function:studio/check_run": {
+      "guid": "aac2dfb7cf3e08daf71455e1644e9c52"
+    },
+    "function:studio/find_assets": {
+      "guid": "f1f03b844358028ab0d8b0e3676fcab8"
+    },
+    "function:studio/generate": {
+      "guid": "524b46ccff7010b9334901db20982610"
+    },
+    "function:studio/get_asset": {
+      "guid": "ac96020d6c3d94c6d28ca714ec25d092"
+    },
+    "function:studio/home": {
+      "guid": "53943af6731225bd28353c591d1fe846"
+    },
+    "function:studio/list_recipes": {
+      "guid": "49da0166ee08c408c58cc8fa03227396"
+    },
+    "function:studio/model_state": {
+      "guid": "c32bea7fe1e034835b5bab937b5c2232"
+    },
+    "function:studio/my_usage": {
+      "guid": "6be8fe418e931a2aedca0f4f85f106f4"
+    },
+    "function:studio/run_answer": {
+      "guid": "3e8c134c2ee4fd2fc46f478509998116"
+    },
+    "function:studio/run_recipe": {
+      "guid": "0c6dec9440ed2beffa332e20944de759"
+    },
+    "middleware:easel/member": {
+      "guid": "fefce649f3f0b5ffd9ba50e213657f78"
+    },
+    "middleware:easel/turn_close": {
+      "guid": "656b3cb4c5e2ceba712931d49d09d67a"
+    },
+    "middleware:easel/turn_open": {
+      "guid": "9d57a6a406b737d8d66712ecc84ad27c"
+    },
+    "middleware:studio/agent_keys_member": {
+      "guid": "22fe5ce6e9d1b5cc7655f4cec5c25887"
+    },
+    "query:Authentication|GET|auth/demo/personas": {
+      "guid": "b83e7c6953156d71f59acffa05dc79d2"
+    },
+    "query:Authentication|GET|auth/invites": {
+      "guid": "1009cee1fcfd5f1fb8899807398f6665"
+    },
+    "query:Authentication|GET|auth/me": {
+      "guid": "8e64176a70b122ffed0ce68ceed6b9ce",
+      "guid_source": "code"
+    },
+    "query:Authentication|GET|auth/status": {
+      "guid": "7c5689070601fc7f9cd11890b0fa1ef2"
+    },
+    "query:Authentication|PATCH|auth/me": {
+      "guid": "e07bb43e93fb31e03505b6200a89df24"
+    },
+    "query:Authentication|POST|auth/demo": {
+      "guid": "57d4713073de44a5850be77ca2037d16"
+    },
+    "query:Authentication|POST|auth/invites": {
+      "guid": "200f98a8cc06cb814b3be6372e8a4cb1"
+    },
+    "query:Authentication|POST|auth/invites/{id}/revoke": {
+      "guid": "88465458bb33b13e92c39221ebe9dd71"
+    },
+    "query:Authentication|POST|auth/link": {
+      "guid": "73a0ac4e597dd8af5527efd6fea738a5"
+    },
+    "query:Authentication|POST|auth/link/accept": {
+      "guid": "edcdf8905fda0a855258976733594e61"
+    },
+    "query:Authentication|POST|auth/login": {
+      "guid": "35b7bbd1552626fbc8b7b6c1115c70df",
+      "guid_source": "code"
+    },
+    "query:Authentication|POST|auth/me/password": {
+      "guid": "8e9e49eec9d4d6a886c5c90202fc9009"
+    },
+    "query:Authentication|POST|auth/people/{id}/reset-link": {
+      "guid": "553340983f0c224529b93de4c94a1c2d"
+    },
+    "query:Authentication|POST|auth/setup": {
+      "guid": "d1af09dd08e536a65a65637d9d46d0ee"
+    },
+    "query:Authentication|POST|auth/signup": {
+      "guid": "ad508f9d25b77a54e415db5c45d0d8d0",
+      "guid_source": "code"
+    },
+    "query:Chatbot|DELETE|chat/conversations/{conversation_id}": {
+      "guid": "7c36dd95cd835b1e074c13e88dfb366f"
+    },
+    "query:Chatbot|GET|chat/conversations": {
+      "guid": "462d80d3951173d82fd6af65d2d66226"
+    },
+    "query:Chatbot|GET|chat/conversations/{conversation_id}/messages": {
+      "guid": "3b6c9a03e5e4d27ed093c48d631012f3"
+    },
+    "query:Chatbot|POST|chat/conversations/create": {
+      "guid": "07552b101f5c7504c601f071300e1d96"
+    },
+    "query:Chatbot|POST|chat/conversations/{conversation_id}/send": {
+      "guid": "6a62546cc13071290f173fe1a1bcd5e4"
+    },
+    "query:MCP OAuth|GET|mcp_oauth/login": {
+      "guid": "aecd78c1c9daacdbd415ade01e6fd77f"
+    },
+    "query:MCP OAuth|GET|mcp_oauth/request": {
+      "guid": "2e2afa6bf73758db462243703f5c49b8"
+    },
+    "query:MCP OAuth|POST|mcp_oauth/complete": {
+      "guid": "c73632038f52023bd3e4c802e46f3967"
+    },
+    "query:MCP OAuth|POST|mcp_oauth/sign_in": {
+      "guid": "95965a156cc0e36b35e016145ebb75fe"
+    },
+    "query:agent|GET|agent/activity": {
+      "guid": "9a8e1604eb608d23d1830387749c9fe5"
+    },
+    "query:agent|GET|agent/connections": {
+      "guid": "b9c7bc064f0710a08e0874fb29a61e12"
+    },
+    "query:agent|GET|agent/info": {
+      "guid": "bc0adfcd34661f63a9e872cf5d198d84"
+    },
+    "query:agent|POST|agent/connections": {
+      "guid": "867a0a082e530f2e65e108c2470f1bfd"
+    },
+    "query:agent|POST|agent/connections/{id}/revoke": {
+      "guid": "77323117ebfbe57ce8655ae586ab5693"
+    },
+    "query:approvals|GET|approvals": {
+      "guid": "fd589bb359d6f89f15bc9267c1c0a127"
+    },
+    "query:approvals|POST|approvals/{id}/approve": {
+      "guid": "c73e10362e162138c316ebb3ead5ed99"
+    },
+    "query:approvals|POST|approvals/{id}/decline": {
+      "guid": "3e77b035a152ba08663b226305ecf0dd"
+    },
+    "query:app|GET|app/activity": {
+      "guid": "0e39ee592793d3bb4db8ac37d8384f32"
+    },
+    "query:app|GET|app/notifications": {
+      "guid": "e842bbc5ba048bfdd0d380ca588ae653"
+    },
+    "query:app|GET|app/notifications/unread": {
+      "guid": "fa022888475637435c6f3b6932cc2e78"
+    },
+    "query:app|GET|app/people": {
+      "guid": "625b976644075dd90ecfc1e334d2f6b3"
+    },
+    "query:app|GET|app/settings": {
+      "guid": "b9809e38250fbfa90155bc604eb2db63"
+    },
+    "query:app|PATCH|app/settings": {
+      "guid": "29068de8520304ab536a922150685605"
+    },
+    "query:app|POST|app/notifications/read-all": {
+      "guid": "74c0c7d2364fb765f170d1b56f0f4336"
+    },
+    "query:app|POST|app/notifications/{id}/read": {
+      "guid": "6893f09eb5bc2a69aed3c29019611582"
+    },
+    "query:knowledge|DELETE|sources/{id}": {
+      "guid": "b0a54e1965cbee58e7d146edbb582f8a"
+    },
+    "query:knowledge|GET|questions": {
+      "guid": "2a875faf19c4614df7a093775ae80dd6"
+    },
+    "query:knowledge|GET|sources": {
+      "guid": "218be176f7aa73020fdf74aef1c93c44"
+    },
+    "query:knowledge|GET|sources/{id}": {
+      "guid": "93f4fbdf42fc7ff4580d910c30acb58d"
+    },
+    "query:knowledge|GET|sources/{id}/audio": {
+      "guid": "65856fdeda807396773de5607f7d1821"
+    },
+    "query:knowledge|POST|ask": {
+      "guid": "e26756de30511efddacb8a0f236146ee"
+    },
+    "query:knowledge|POST|sources": {
+      "guid": "faf0103a24ad8a39eef4601638b920a9"
+    },
+    "query:knowledge|POST|sources/{id}/retry": {
+      "guid": "ee2fe3f8c7cf164f1827313d2c05b397"
+    },
+    "query:library|DELETE|assets/{id}": {
+      "guid": "af2cfd5f2dc8bf0c01f45b827838981d"
+    },
+    "query:library|GET|assets": {
+      "guid": "afbb7788c369b86dbdb5402ce98bb5d0"
+    },
+    "query:library|GET|assets/{id}": {
+      "guid": "39da0277ac80d6acda4a4414414c694c"
+    },
+    "query:library|GET|assets/{id}/link": {
+      "guid": "0d9b9facbbe8a8e9d5168d019cb398b1"
+    },
+    "query:library|GET|assets/{id}/text": {
+      "guid": "3ee390dc928bcf1ab87bc2df9673729e"
+    },
+    "query:library|GET|facets": {
+      "guid": "2216f55be3966b855b20f15a9a54a05a"
+    },
+    "query:library|GET|media/{id}": {
+      "guid": "26b67a055e7d8d884ad1813201f98281"
+    },
+    "query:library|POST|assets/{id}/approve": {
+      "guid": "5ebcd0e3a762cfd736eaf01e1026c5b3"
+    },
+    "query:rbac|GET|rbac/changes": {
+      "guid": "7089569b87fb73f3a57cd67a9c3d2625"
+    },
+    "query:rbac|GET|rbac/me": {
+      "guid": "5e438831b483a6067cfb5e8754543144"
+    },
+    "query:rbac|GET|rbac/members": {
+      "guid": "4a1904ed6c32f9c1a500f4ab875f8c04"
+    },
+    "query:rbac|POST|rbac/members/{id}/role": {
+      "guid": "5eda75ffcd0a58d4d355408111332420"
+    },
+    "query:settings|DELETE|brand/images/{id}": {
+      "guid": "38a7d14a2f65f51d98e228ec9f2fb7bc"
+    },
+    "query:settings|GET|brand": {
+      "guid": "54b5a83aaeff9d26c02eac2cf8178ba5"
+    },
+    "query:settings|GET|brand/images/{id}": {
+      "guid": "d2678c07f3f882249d7ed8a65654c484"
+    },
+    "query:settings|GET|prices": {
+      "guid": "82a61af675d8ff35cd1fcc990c365bca"
+    },
+    "query:settings|PATCH|prices/{id}": {
+      "guid": "c2f2c296733abaa7764ccb3315dc1da6"
+    },
+    "query:settings|POST|brand/images": {
+      "guid": "44951443e0c87441cb12df3928a6b864"
+    },
+    "query:settings|PUT|brand": {
+      "guid": "429ec66d0d08a4c0200b0b4a79cb1564"
+    },
+    "query:studio-loop|POST|steps/execute": {
+      "guid": "b5a8df97a3045f44ba3fb8fe138a5be2"
+    },
+    "query:studio|DELETE|recipes/{id}": {
+      "guid": "16732cfc029489e98b814bef720e01dd"
+    },
+    "query:studio|GET|ai-state": {
+      "guid": "c3280ddf35d468517238dd455c938e94"
+    },
+    "query:studio|GET|budgets": {
+      "guid": "63ee56c93a957b6ec242cbafc43ed313"
+    },
+    "query:studio|GET|easel": {
+      "guid": "d19f04410446fb695cf6d52ef2c6cbe2"
+    },
+    "query:studio|GET|home": {
+      "guid": "a45ccf5838538e8f392c2078c5742461"
+    },
+    "query:studio|GET|keys": {
+      "guid": "baea786bd68ae52ae88c0bccdcc8f433"
+    },
+    "query:studio|GET|playground/catalog": {
+      "guid": "0836ab39e93e93d36cdfb7400a677047"
+    },
+    "query:studio|GET|playground/history": {
+      "guid": "925365bd89db32daa500299029c7c477"
+    },
+    "query:studio|GET|recipes": {
+      "guid": "c694e86b21e8279f6d0be705a62e0ee7"
+    },
+    "query:studio|GET|recipes/runs/{id}": {
+      "guid": "9b899d8d0f45d26e6ee832ca7caebdf8"
+    },
+    "query:studio|GET|recipes/{id}/runs": {
+      "guid": "6058c098a9cdb35c44556db096b66e5e"
+    },
+    "query:studio|GET|recipes/{slug}": {
+      "guid": "f0d2865e989dac03c140e49b0c1e5b70"
+    },
+    "query:studio|GET|runs/{id}": {
+      "guid": "1fca19ea62c8255fb889a36b8b518b74"
+    },
+    "query:studio|GET|runs/{id}/details": {
+      "guid": "0ca26f2b9d07b7c84f31b7e69677c9dc"
+    },
+    "query:studio|GET|usage": {
+      "guid": "55b2e222c982e287a60a06de32998135"
+    },
+    "query:studio|PATCH|budgets": {
+      "guid": "78a0e0a7f6a7f837e4cfa965ddd2e383"
+    },
+    "query:studio|PATCH|recipes/{id}": {
+      "guid": "bfcdfa3c1635c5a4b89220a7f49282f7"
+    },
+    "query:studio|POST|ai-status": {
+      "guid": "12cea3ae2f149de4922c4791cd147584"
+    },
+    "query:studio|POST|ai-status/check": {
+      "guid": "1d319a9cd5826bad4bbb4c247bf00c64"
+    },
+    "query:studio|POST|budgets/people/{id}": {
+      "guid": "76c75b0b1b454b78714abc9ec69a01ab"
+    },
+    "query:studio|POST|keys": {
+      "guid": "b16f1cf215791a93f7d09e4aef0a37aa"
+    },
+    "query:studio|POST|keys/{id}/revoke": {
+      "guid": "c6a11b7850a2d22f24eaa2a27dc53147"
+    },
+    "query:studio|POST|playground/estimate": {
+      "guid": "c63b352235e77fe8c13c3c74884402bb"
+    },
+    "query:studio|POST|playground/steps/{id}/use": {
+      "guid": "424d830e868ed5276bc11abbc32f8f2f"
+    },
+    "query:studio|POST|recipes": {
+      "guid": "9dc82575edc4f56ab479f5c9fde111bb"
+    },
+    "query:studio|POST|recipes/estimate": {
+      "guid": "3b0ee4c0f8bdbb64abbb678fafe8de4b"
+    },
+    "query:studio|POST|recipes/{id}/runs": {
+      "guid": "ff5448849f578675323f461b31474959"
+    },
+    "query:studio|POST|recipes/{slug}/run": {
+      "guid": "79176ace87fa35959c5cb2319c424913"
+    },
+    "query:studio|POST|runs": {
+      "guid": "9edda6403e58ba3992ec892972423b49"
+    },
+    "query:studio|POST|runs/{id}/ask-admin": {
+      "guid": "4b08e8740f2ba63a355725176e122898"
+    },
+    "query:studio|POST|runs/{id}/confirm": {
+      "guid": "de2b6ba103a4cce1ee3cf5d0a16c54ed"
+    },
+    "query:studio|POST|runs/{id}/raise-budget": {
+      "guid": "285f1dbfe40e5c2f57b09b910efe73a7"
+    },
+    "query:studio|POST|runs/{id}/retry": {
+      "guid": "5a9c2e023c8c76841ecb7754cfc401b7"
+    },
+    "query:studio|POST|runs/{id}/stop": {
+      "guid": "a0351b32aed782468d993f4475cbda6a"
+    },
+    "query:studio|POST|storage-check": {
+      "guid": "56037edbba188c24cec5917971b96b28"
+    },
+    "realtime_server:live": {
+      "guid": "5d1e4e55d5ae5c2dab1639895bf8abef",
+      "canonical": "live",
+      "canonical_source": "code"
+    },
+    "task:runs/sweep_every_minute": {
+      "guid": "128485148f8135569738fc2ce3cbf092"
+    },
+    "task:spend/reconcile_every_hour": {
+      "guid": "38289bed6291d4891a19617ca0497f97"
+    },
+    "tool:ask_knowledge": {
+      "guid": "75309406fd0ef832bb3547bb820a396e"
+    },
+    "tool:ask_knowledge_base": {
+      "guid": "471d237d25978187879f2c8b72eea8f6"
+    },
+    "tool:ask_knowledge_signin": {
+      "guid": "0be95f659018e97a8dd84aaf799549f9"
+    },
+    "tool:browse_recipes": {
+      "guid": "2c3947a637740e08e894aa1ab8ecc837"
+    },
+    "tool:check_approval": {
+      "guid": "e4c87b30ec8a77fd509a5629861f8879"
+    },
+    "tool:check_approval_signin": {
+      "guid": "39658920a99a071bd8f912ca653abfc6"
+    },
+    "tool:check_my_approval": {
+      "guid": "29a385ed242c53d469ebc4ff1f80b0d2"
+    },
+    "tool:check_on_run": {
+      "guid": "7da61b74c7961966912a3356575bd87d"
+    },
+    "tool:check_run": {
+      "guid": "c30af5e54570f077ccb9db255c2e126a"
+    },
+    "tool:check_run_signin": {
+      "guid": "090a7a05967e660e2bef44076ae0af3b"
+    },
+    "tool:find_assets": {
+      "guid": "862539450c73cf168a4fb5f13336da4e"
+    },
+    "tool:find_assets_signin": {
+      "guid": "18398b2e4173249decfbca95f6a8d81b"
+    },
+    "tool:generate": {
+      "guid": "d74879328d60f127e5704c678295a106"
+    },
+    "tool:generate_signin": {
+      "guid": "a8d45b759b8afefab150b9521a64cbcf"
+    },
+    "tool:get_asset": {
+      "guid": "35b898c2bbd1954b7cb556ec691c2397"
+    },
+    "tool:get_asset_signin": {
+      "guid": "fa05990bb45de2be841f7068fe6d6ebd"
+    },
+    "tool:list_recipes": {
+      "guid": "d98592301685b46f8408f21be7a55cfd"
+    },
+    "tool:list_recipes_signin": {
+      "guid": "9941e1bbb68cc708f34ada6b010bad69"
+    },
+    "tool:make_output": {
+      "guid": "2eb9a61ab8f836d136ea7eb580ecfd87"
+    },
+    "tool:my_notifications": {
+      "guid": "9dc5c2921aeb1fafafb4fe584a1b4da2"
+    },
+    "tool:my_notifications_signin": {
+      "guid": "44e693d7c34482788c61fdd5fd134678"
+    },
+    "tool:my_spend": {
+      "guid": "0ed9164e763297a103f76b179fb04bc9"
+    },
+    "tool:my_usage": {
+      "guid": "39d0ba537e935dde62f2a83d2fc35a34"
+    },
+    "tool:my_usage_signin": {
+      "guid": "249ed55d15eca55d3bfc0b4386d148e7"
+    },
+    "tool:read_library_item": {
+      "guid": "39ef58e86fd0d4df5953223229208734"
+    },
+    "tool:recent_activity": {
+      "guid": "b9b5b034a829491549a68e02ef0b2380"
+    },
+    "tool:request_role_change": {
+      "guid": "feb76843765378e34d08cb0d0ab39b12"
+    },
+    "tool:request_role_change_signin": {
+      "guid": "1ed0f6b4a92c30b2502b81b629de9b91"
+    },
+    "tool:run_recipe": {
+      "guid": "b5810d0cc5597dddd29b831e128526fa"
+    },
+    "tool:run_recipe_signin": {
+      "guid": "66c38fada19f8f24729cdff792efd559"
+    },
+    "tool:search_library": {
+      "guid": "b91b443f9bbac532b6f4ca7467626f47"
+    },
+    "tool:start_recipe": {
+      "guid": "31ebb1b5ad29383ec6bb3ae85990ed8d"
+    },
+    "tool:unread_notifications": {
+      "guid": "38c8c46488f250ae5be77f463a2529d6"
+    },
+    "tool:whats_new": {
+      "guid": "918f0e856bba98c19c373ab75b366a83"
+    },
+    "tool:whats_new_signin": {
+      "guid": "5544f968b66cbdb1bffb89d667c86d7f"
+    },
+    "toolset:ai-studio-mcp": {
+      "guid": "005ee9f61fdbbfe8f5f12caeb16760ee",
+      "canonical": "ai-studio-mcp",
+      "canonical_source": "code"
+    },
+    "toolset:ai-studio-mcp-signin": {
+      "guid": "4b5afb9cd7d0608c09dcae9c558f1ef4",
+      "canonical": "ai-studio-mcp-signin",
+      "canonical_source": "code"
+    },
+    "toolset:chatbot_agent": {
+      "guid": "2d7f6782dc621289c7663157d2df67c5",
+      "canonical": "VntDb0PG",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "toolset:easel_google": {
+      "guid": "780f1c9da2de3df553ab7c5fdb0272c0",
+      "canonical": "ZbOGF0fT",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "toolset:easel_xano_ai": {
+      "guid": "1ee9823baf6d02b822692d98e14a629f",
+      "canonical": "QV8Wjhn-",
+      "canonical_source": "minted",
+      "type": "agent"
+    },
+    "trigger:live/users_join": {
+      "guid": "b0163d66e034b508bda377fb9e0419dc"
+    },
+    "workflow_test:agent-access: a read key can't write": {
+      "guid": "eb7a23147e7296356470daab698c7a2c"
+    },
+    "workflow_test:agent-access: a sign-in gets one row, made on first use": {
+      "guid": "05c9d13e2b9feaae94505871844bf8d0"
+    },
+    "workflow_test:agent-access: keys are made within bounds": {
+      "guid": "01bd3d22a29d3d08b0735c33de7a544b"
+    },
+    "workflow_test:agent-access: revoked and expired keys stop at once": {
+      "guid": "45da1e38432aaacd956d184eb39094e0"
+    },
+    "workflow_test:ai state: while AI is off an admin reads what happened, a member that an admin can turn it on, and a plan without paid storage says so": {
+      "guid": "0bb6d505cfcb0491d1968e4b7032f4be"
+    },
+    "workflow_test:approvals: \"change_role\" is decided by an admin, never the requester": {
+      "guid": "ab643e3fabd44686d2458f9ec9fec087"
+    },
+    "workflow_test:approvals: \"costly_run\" is decided by an admin, never the requester": {
+      "guid": "fd9e9e20268f97fd2dd41eb3d64ff351"
+    },
+    "workflow_test:approvals: \"over_budget\" is decided by an admin, never the requester": {
+      "guid": "62f8bbdb77a21c6d91a7385d137cd720"
+    },
+    "workflow_test:approvals: a request expires": {
+      "guid": "fee65bb28c09a07108e41bb31f5fd9d8"
+    },
+    "workflow_test:approvals: asking only records a request": {
+      "guid": "6a23cb302659c404226a30ef3e672f26"
+    },
+    "workflow_test:base: a notification reaches its person, never the person who caused it": {
+      "guid": "cea8c9f14b9ba04e874245f374fac173"
+    },
+    "workflow_test:base: a reset link works once, and an unknown link does nothing": {
+      "guid": "86ab72293f5f680d1ed6e75d51f499b9"
+    },
+    "workflow_test:base: an invite link signs a new person in, once": {
+      "guid": "3d8eb61f702070266b6336b6596d4417"
+    },
+    "workflow_test:brand: a member saves the kit and everyone who runs models reads it back; a guest can neither read nor change it": {
+      "guid": "a71285435dbeb4c3172a364f13651396"
+    },
+    "workflow_test:brand: a save cleans the words to avoid, and refuses a bad colour, a seventh colour or a voice no model offers": {
+      "guid": "c5361df04094091172b9bed180e25a3b"
+    },
+    "workflow_test:brand: image and video prompts get the visual rules and colours, speech and music get their defaults, and none with the kit off": {
+      "guid": "97acac4fdad2f144067515820171ceba"
+    },
+    "workflow_test:brand: reference images go after the person's own images, byte for byte, never past the model's 14": {
+      "guid": "6c6ef576be47bd2ab378a0bfddfb1bef"
+    },
+    "workflow_test:brand: the kit holds three PNG, JPEG or WebP images, a guest can't add one, and a removed one stops being sent": {
+      "guid": "ab0b1a71412a32657064423964b1559b"
+    },
+    "workflow_test:brand: with the kit on, text gets the voice and the words to avoid; with it off, the step goes as written": {
+      "guid": "d17a78def8912afd6107386c2e37281e"
+    },
+    "workflow_test:home: 'Waiting on you' lists the three oldest shared drafts, oldest first, to those who may approve them": {
+      "guid": "d551afe7800530e6c3621ce3fff27979"
+    },
+    "workflow_test:home: an admin sees the team's spend and every approval, a member their own, and a guest neither": {
+      "guid": "a5b87fd218ca20097091e57019496eba"
+    },
+    "workflow_test:home: the last seven days of spend are the team's settled charges for an admin and a member's own for them": {
+      "guid": "2a69fc0ea08e1160c2d833fb02cc6945"
+    },
+    "workflow_test:knowledge: a 20-page PDF is read five pages a step, becomes passages with page numbers, and is ready": {
+      "guid": "7f1e5feadbc76f878f837f163572fb7d"
+    },
+    "workflow_test:knowledge: a Markdown file becomes passages at once, embedded in batches of 50, and is ready when every batch is in": {
+      "guid": "7d2f0ffc4453cb2e8215a1be5d44e75a"
+    },
+    "workflow_test:knowledge: a PDF range that ends at max_tokens fails the source as too long, and it never becomes ready": {
+      "guid": "fe7a56abd5347d643c5ebb32867ed81f"
+    },
+    "workflow_test:knowledge: a PDF that doesn't say its page count is planned for the most, and the first range releases the rest": {
+      "guid": "114f83d3582b306fcfa792623d2ec1b5"
+    },
+    "workflow_test:knowledge: a PDF whose first pages come back with no text fails as a scan, and the rest isn't sent": {
+      "guid": "1d767d6a373943026ced74b597ac36e2"
+    },
+    "workflow_test:knowledge: a guest asks and gets the same passages as a member, and can't add a source": {
+      "guid": "993bf61b83c96bc24dbbb41f39d2c15c"
+    },
+    "workflow_test:knowledge: a question with nothing close enough says it couldn't find it, cites nothing, and sends no answer": {
+      "guid": "e5917407eb92a45d58b0236df3c9d577"
+    },
+    "workflow_test:knowledge: a recording becomes passages that start at their speaker's turn, and is ready": {
+      "guid": "26ba6c1f55d4fb33b3de3435129d8022"
+    },
+    "workflow_test:knowledge: a scanned PDF with no text layer fails before anything is sent or charged": {
+      "guid": "9992979f422be4967c8c0ff0d7a12cc2"
+    },
+    "workflow_test:knowledge: a source that fails after its passages were made never puts them live, and the sweep clears them": {
+      "guid": "0bd10e3de07ad703b59bbc84a2980b58"
+    },
+    "workflow_test:knowledge: once the gateway refuses rerank, the answer is ranked by similarity and later questions skip rerank": {
+      "guid": "955f402ed76246b6322657cc21b7fb77"
+    },
+    "workflow_test:knowledge: recent questions list only your own, newest first, with the answer and citations they were given": {
+      "guid": "c6bb36193edcbb16619672b4eb841266"
+    },
+    "workflow_test:knowledge: when only an embedding call fails, what was read is kept and whoever added it can retry it to ready": {
+      "guid": "17e7f66691b1c5708e06168e2d712a07"
+    },
+    "workflow_test:knowledge: with no rerank model, the rerank step is skipped by design and the answer cites only passages it was given": {
+      "guid": "4a9ae3e859115b769b277a50c38ccb5c"
+    },
+    "workflow_test:library: a download is a one-minute link for a file, and the text route for words": {
+      "guid": "afabc4621f72aceb3bbce0110ffa1967"
+    },
+    "workflow_test:library: a guest's library holds only approved items, and a draft answers as if it didn't exist": {
+      "guid": "4757bafb50d540338fa310c22548e923"
+    },
+    "workflow_test:library: a private Playground output is its maker's and the admins' until Use this, then the team's": {
+      "guid": "5a9c5b9ac57f36f53543fe66fe9a6889"
+    },
+    "workflow_test:library: a tile and the recipe filter name a recipe by its own name, not by what its run was titled": {
+      "guid": "564663dd487f1707de1a1605798fd9c0"
+    },
+    "workflow_test:library: an image step's output is a draft item with its prompt, model, cost, maker and run": {
+      "guid": "0b5e9c6fb1d722ecc5e815e1b672d69d"
+    },
+    "workflow_test:library: approving records who and when; approving twice keeps the first; a guest can't approve": {
+      "guid": "d838eab125f4286f8c69bb6af844a14d"
+    },
+    "workflow_test:library: only the maker or an admin deletes an item; its step stops pointing at it": {
+      "guid": "822672bfce01656950984c0f09ddea53"
+    },
+    "workflow_test:library: the filters narrow by kind, maker and recipe, and a recipe with no runs matches nothing": {
+      "guid": "9ff6ec5d5555238631023d47e64cab66"
+    },
+    "workflow_test:library: the list says how many items, and how many words, each date group holds, from the screen's own day boundaries": {
+      "guid": "f3186d870eee28d6ab6cfd600f4b39c1"
+    },
+    "workflow_test:media: a file shows from its table by id, from a link or only on cloud when kept privately, and not at all without one": {
+      "guid": "6e24e63100c516bb4fcd90002bd40f0f"
+    },
+    "workflow_test:media: a recording kept for Knowledge plays for anyone who may ask Knowledge, guests included": {
+      "guid": "aa3befa4e951993fcbcec4aa7e2e36ed"
+    },
+    "workflow_test:media: a table-kept picture reaches whoever may see its item, and reads as not found to anyone else": {
+      "guid": "7eb32aa7715ecc7c9b9a0ace7592d191"
+    },
+    "workflow_test:plan: a plan that can't keep video, music or speech refuses those kinds before anything is reserved": {
+      "guid": "03991ca6a1f89e54c747c292dbf23e06"
+    },
+    "workflow_test:playground: Use this puts your own output in the team's library as a draft; someone else's isn't found": {
+      "guid": "603192861541a7d718e588f3fc5ee16a"
+    },
+    "workflow_test:playground: a model the catalog doesn't offer for that kind, or doesn't serve, is refused": {
+      "guid": "fc8cd47627e6e8f4961f79d390bde12d"
+    },
+    "workflow_test:playground: another member asking for a private Playground run gets the same answer as for no run at all": {
+      "guid": "3cbae589ffb436e40c1a2fb9d359404a"
+    },
+    "workflow_test:playground: history lists only your own Playground runs, whatever the reader's role": {
+      "guid": "46c0a7f2ee6938949fb39e92b7827c51"
+    },
+    "workflow_test:rbac: a demoted manager loses the power at once": {
+      "guid": "dd96cc50ef2bdceb8609b8a2e82a73e8"
+    },
+    "workflow_test:rbac: a manager changes a role, and it is recorded": {
+      "guid": "1b269a06f3984425f98dc5828c6ea5c5"
+    },
+    "workflow_test:rbac: a member can't change roles": {
+      "guid": "d58dc0141170a2ef366cd4b093ee5805"
+    },
+    "workflow_test:rbac: nobody changes their own role, or a missing person's": {
+      "guid": "33d7562332050eb849c3c2b3bec0e83e"
+    },
+    "workflow_test:recipes: a member's run with a video waits for one approval, which names the video step": {
+      "guid": "88d3272cf993f37e79578da84334cb2c"
+    },
+    "workflow_test:recipes: a pick from Knowledge becomes an embedding step first, and the steps that use it wait for it": {
+      "guid": "69d9118bb26f67e433d85f10c1142d04"
+    },
+    "workflow_test:recipes: a recipe whose model was retired shows which step and what to use, and its runs are refused with 409": {
+      "guid": "f3fcb70dbc7094ec111464e6047557f1"
+    },
+    "workflow_test:recipes: a recipe's page knows its run count, its latest run, the reader's last inputs and what the newest finished run made": {
+      "guid": "37067f22538cab2c4c30394e7b9b3fd1"
+    },
+    "workflow_test:recipes: a run started with a person's key is theirs, records the key, and a repeat of its key is the same run": {
+      "guid": "02306684df67a9b264c1561c866827f7"
+    },
+    "workflow_test:recipes: a step whose prompt names a blocked step is skipped and says so, and a step that doesn't need it still runs": {
+      "guid": "b9395e623290443765bcf27313a8011a"
+    },
+    "workflow_test:recipes: a step's dependencies are the earlier steps its prompt and file name, and a later step can't be named": {
+      "guid": "83ac07161c8c39ae48f035a9d63666f1"
+    },
+    "workflow_test:recipes: the list says how often each recipe ran and when it last did, and leaves out one that never ran": {
+      "guid": "ae09a4dcd634f1ac380d064d5d4f2f38"
+    },
+    "workflow_test:recipes: when the video times out after the copy and image succeed, the run is partial, the steps that don't need the video still run, and a retry re-runs only the video": {
+      "guid": "0c245c559895f22108dc74d73ceba84e"
+    },
+    "workflow_test:recipes: without a key of its own, the same call within ten minutes derives the same key, whatever order its arguments came in": {
+      "guid": "966e9c33c9a4f58c999419d4f249497d"
+    },
+    "workflow_test:runs: a declined request, and one nobody decides, end the run declined with no money moved": {
+      "guid": "af8c931f6cc982cf791ed27f7e47c8c5"
+    },
+    "workflow_test:runs: a member's video waits for an admin with nothing held, and approval reserves against the member's budget": {
+      "guid": "d220d32a1d6762f5684bfdf00d378bfa"
+    },
+    "workflow_test:runs: a run over the person's budget can go to an admin, who lets it past once": {
+      "guid": "b0c438b7ad42c8b0fb9ac1c3ac224386"
+    },
+    "workflow_test:runs: a run's state follows its steps": {
+      "guid": "cc47fbfefaa44e350c28d85b1483d17b"
+    },
+    "workflow_test:runs: an admin's own costly run waits for their click in the app, even when an agent started it": {
+      "guid": "7b6d07575e45d3e01f7560ef3d88d21c"
+    },
+    "workflow_test:runs: approving after the owner's budget was cut ends the run refused, saying why": {
+      "guid": "63ae296ecac73c2f8580b8c393b8506f"
+    },
+    "workflow_test:runs: the same key returns the first run and reserves once; a different request under it is a conflict": {
+      "guid": "1b644ba6581744cd8d17f5426ab48fed"
+    },
+    "workflow_test:runs: the sweep charges a sent step past its time, and a late success is kept and charged once": {
+      "guid": "1f913ec33ec77710f703ddfb78a6ab11"
+    },
+    "workflow_test:runs: the sweep releases a step whose request died before it reached the model": {
+      "guid": "a0af448131543eca0090478dd7257785"
+    },
+    "workflow_test:sample: the sweep ends the demo's sample run with the clip it carries, as a library item, and charges nothing": {
+      "guid": "74a3d64d9668a9933c834345939294e8"
+    },
+    "workflow_test:setup: the first admin needs the backend's setup token, and a backend is set up once": {
+      "guid": "8cfba57462fbcf5ad4225501a59e07c6"
+    },
+    "workflow_test:spend: a blocked text is charged at its reservation": {
+      "guid": "654d6e1e4416b70779fd28b6837f15b5"
+    },
+    "workflow_test:spend: a budget change moves this month's budget and what's left by the difference": {
+      "guid": "34dc1f1c372d55357ffacd1cc38010a9"
+    },
+    "workflow_test:spend: a reservation holds the estimate on the team and the person, one ledger row per step": {
+      "guid": "13db357fc532b1136ae31bd40562f8a2"
+    },
+    "workflow_test:spend: a reservation made last month settles against last month": {
+      "guid": "bdf4ab976f2348e9cf0e1f34ba640215"
+    },
+    "workflow_test:spend: a run that doesn't fit the person's budget is refused in words, with nothing held": {
+      "guid": "a6d6575272df681e75ed6d7b62e3807b"
+    },
+    "workflow_test:spend: an estimate is the catalog price for what's used, plus the gateway's 10%": {
+      "guid": "e3292428a89a09fb2aa4329e2235915d"
+    },
+    "workflow_test:spend: settling charges what was used, a clip at its price, and releasing gives the rest back": {
+      "guid": "1db97d9a2a2dc8fbcf013f6c3abc90c3"
+    },
+    "workflow_test:spend: settling twice moves the money once, and keeps the second result on the ledger": {
+      "guid": "1ef127ffc6afcac5fe103402f8c8d35d"
+    },
+    "workflow_test:spend: the counters are rebuilt from the ledger when they drift": {
+      "guid": "b4c738b512428d4bd12ef1e61c910394"
+    },
+    "workflow_test:spend: the team's budget refuses before the person's is touched": {
+      "guid": "82ec821c8310c9a95829d89ebb27ab49"
+    },
+    "workflow_test:steps: a JSON reply that doesn't parse fails in plain words, is still charged, and makes no library item": {
+      "guid": "b87e0ac9949a99dd601c1a0f42f27ee8"
+    },
+    "workflow_test:steps: a blocked reply is recorded blocked, charged from what it used, and makes no library item": {
+      "guid": "6cd2242ffa8522c7c00cc56ac29c3d0f"
+    },
+    "workflow_test:steps: a private run is read by its owner and admins only, a team run by anyone but a guest": {
+      "guid": "a53558193b1bb28ed5524433cc08a7f1"
+    },
+    "workflow_test:steps: a revoked key stops its run before anything is sent, and the money comes back": {
+      "guid": "ac91d8e4cefae81406e61e508e523e21"
+    },
+    "workflow_test:steps: a step whose earlier step failed is skipped and released, while a step that doesn't need it still runs": {
+      "guid": "f86eb22cacf0151bd8017c529de4b988"
+    },
+    "workflow_test:steps: a success that arrives after the sweep timed the step out is kept, charged once, and becomes one library item": {
+      "guid": "c9ccaaa7499c1ce11b6b09f7a11fadba"
+    },
+    "workflow_test:steps: a successful output becomes a draft library item with how it was made": {
+      "guid": "ddcf3aecc579ffa0a772a585ac54f396"
+    },
+    "workflow_test:steps: a video that isn't ready in time ends timed out and is charged in full": {
+      "guid": "e0cde3d45650ed271e45648dd962f250"
+    },
+    "workflow_test:steps: a wrapper refuses a step that holds no reservation, or wasn't marked sent": {
+      "guid": "95cc752dd46bf91428681b81397f739a"
+    },
+    "workflow_test:steps: an owner who lost the right to run AI is refused before anything is sent": {
+      "guid": "7264d94a5418a00d4df9864ec1a6b074"
+    },
+    "workflow_test:steps: gateway refusals aren't charged and say why, and no credits or AI switched off set the AI status": {
+      "guid": "e79d939bb78454b87d8ab45ca78b5658"
+    },
+    "workflow_test:steps: retry gives only what failed a new attempt and reservation, once per click": {
+      "guid": "a6eb7474f25ecf48abc9fdc0f767db83"
+    },
+    "workflow_test:steps: stopping a run releases the steps not sent, and the sent one finishes and is charged": {
+      "guid": "0e849c082ce50a4bbe6b930df4016d40"
+    },
+    "workflow_test:steps: the brand kit is added when a step asks for it, left out when it doesn't, and the step says which": {
+      "guid": "00c5a3c057af207ff836ad9826538d62"
+    },
+    "workflow_test:storage check: the first run learns once what this plan keeps and how made files are shown": {
+      "guid": "e655eb5ee8da97c232f2ad31ad3d7e1a"
+    },
+    "workflow_test:studio: a gateway refusal sets the AI status": {
+      "guid": "ffbcb9c57267320099d4e7b979220fac"
+    },
+    "workflow_test:tools: a guest's agent is refused on every call before anything is read or reserved": {
+      "guid": "63026ce493aaf96d60a07f8c03595dec"
+    },
+    "workflow_test:tools: a member's video through generate waits for an admin with its estimate, and nothing is made or reserved": {
+      "guid": "f223c04b1bb04310c803928e2960464c"
+    },
+    "workflow_test:tools: a message to Easel opens a turn, records the provider's usage, closes with its tools, and charges no budget": {
+      "guid": "6c628ab86c699664b697b23353dcaa82"
+    },
+    "workflow_test:tools: a read-only key can't reach a tool that writes, and can reach one that reads": {
+      "guid": "bea9c17949d6c647a2c7c26532961008"
+    },
+    "workflow_test:tools: an Easel make_output by someone over budget is refused before any model call": {
+      "guid": "69f1caf3167fbcd38dcf85219649d737"
+    },
+    "workflow_test:tools: ask_knowledge answers exactly what Ask answers for its run, the same shape from MCP and from Easel": {
+      "guid": "2f510537aae1b35d79ab7fc9efa2ea5c"
+    },
+    "workflow_test:tools: generate starts a video from a Library picture, and a picture that can't be read back fails the step before anything is sent": {
+      "guid": "7ffad2865f3ed8e66fbcfa6b95761ced"
+    },
+    "workflow_test:tools: in one Easel turn the same make_output call is one run, and the next turn's is new": {
+      "guid": "30ff361aa21c6cb497dbf63e74f2f29a"
+    },
+    "workflow_test:tools: run_recipe sent twice with the same request_id starts one run, and a new request_id another": {
+      "guid": "7b4db79c459786b62d1b1b338d5c431a"
+    },
+    "workflow_test:tools: with no model key Easel can't answer and says which key to set; with one, or on the Xano AI Router, it can": {
+      "guid": "4922cc1c6fe1cda9edd077a2b2048b9d"
+    },
+    "workflow_test:tools: without a request_id, the same MCP call within ten minutes is one run, and eleven minutes later a new one": {
+      "guid": "1c9b475e8fd680013d9c11da70d2c4e7"
+    },
+    "workflow_test:usage: Easel's own turns show by person and model, apart from the money, and turns with no key count for nothing": {
+      "guid": "d6a13866e1e6dbae3153058a2b00e3c0"
+    },
+    "workflow_test:usage: a member can't read usage or prices; an admin's price change is the next estimate's": {
+      "guid": "3d202179955808ff74865c712b8828c4"
+    },
+    "workflow_test:usage: lowering a person's budget below their spend refuses their next run, and an admin can raise it for that run": {
+      "guid": "f8a2f0b7d13182d51554056ad0d3416c"
+    },
+    "workflow_test:usage: raising the approval line from $0.50 to $2.00 lets a $1.05 recipe run without approval": {
+      "guid": "f44f14fa4b1a1bced301bff0e28cede4"
+    },
+    "workflow_test:usage: totals by person, kind, model and day each add up to the month's settled ledger total": {
+      "guid": "0c45fd1097f1ec2e9c9b4b41b1e7c9e0"
+    }
+  }
+}

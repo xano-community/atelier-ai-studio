@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Atelier: an AI studio for a business team</title>
+<meta name="description" content="Try every Xano AI model, save what works as recipes, keep everything you make, ask your own documents, and stay inside a budget. A Xano starter template." />
+<style>
+  :root {
+    --bg: #ffffff; --fg: #18181b; --muted: #6b6b76; --card: #fafafa; --border: #e6e6ea;
+    --primary: #18181b; --primary-fg: #ffffff; --code-bg: #f4f4f6; --soft: #f1f1f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0b0f; --fg: #ededf2; --muted: #a0a0ad; --card: #131318; --border: #26262e;
+      --primary: #ededf2; --primary-fg: #0b0b0f; --code-bg: #16161c; --soft: #1a1a20;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 32px; }
+  .badge { display: inline-block; font-size: 12px; font-weight: 600; letter-spacing: 0.02em; background: var(--soft); border: 1px solid var(--border); border-radius: 999px; padding: 4px 12px; }
+  h1 { font-size: 40px; line-height: 1.1; margin: 18px 0 10px; letter-spacing: -0.02em; }
+  .lede { font-size: 19px; color: var(--muted); max-width: 46em; margin: 0 0 14px; }
+  .meta { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13px; color: var(--muted); }
+  .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 24px 0 0; }
+  .btn { display: inline-block; font-size: 15px; font-weight: 600; text-decoration: none; border-radius: 8px; padding: 10px 18px; border: 1px solid var(--border); }
+  .btn.primary { background: var(--primary); color: var(--primary-fg); border-color: var(--primary); }
+  .btn.ghost { background: transparent; color: var(--fg); }
+  .hero { margin: 40px 0 16px; }
+  .hero img, .shots img { width: 100%; height: auto; border: 1px solid var(--border); border-radius: 10px; display: block; }
+  .shots { display: grid; gap: 16px; margin: 16px 0 40px; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .shots { grid-template-columns: 2fr 2fr 1fr; align-items: start; } }
+  figure { margin: 0; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 8px; text-align: center; }
+  section { padding: 24px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 24px; letter-spacing: -0.01em; margin: 8px 0 16px; }
+  h3 { font-size: 16px; margin: 20px 0 6px; }
+  ol, ul { padding-left: 22px; } li { margin: 6px 0; }
+  .cards { display: grid; gap: 12px; grid-template-columns: 1fr; margin: 12px 0; }
+  @media (min-width: 640px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; }
+  .card h3 { margin: 0 0 4px; }
+  .card p { margin: 0; color: var(--muted); font-size: 14px; }
+  pre { background: var(--code-bg); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; overflow-x: auto; font-size: 13px; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  .table { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 12px 0; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+  td code { font-size: 12.5px; }
+  footer { padding: 40px 0 72px; color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="badge">Starter template</span>
+    <h1>Atelier</h1>
+    <p class="lede">An AI studio for a business team: try every Xano AI model, save what works as recipes, keep everything you make, ask your own documents, and stay inside a budget.</p>
+    <p class="meta">29 tables · 103 endpoints · 13 screens · auth: @xano-sdk/auth</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="https://github.com/xano-community/atelier-ai-studio">View on GitHub</a>
+      <a class="btn ghost" href="#use">Use this template</a>
+    </div>
+  </header>
+
+  <figure class="hero">
+    <img src="screenshot-light.png" alt="The Library: images, clips, recordings and copy the team made, each a draft or approved, with the model and the person behind it" width="1280" height="800" />
+    <figcaption>The Library: everything the team made, with how it was made</figcaption>
+  </figure>
+  <div class="shots">
+    <figure><img src="screenshot-dark.png" alt="Home in dark mode: the month's spend, runs waiting for approval, recently made work and team recipes" width="1280" height="800" /><figcaption>Home, in dark</figcaption></figure>
+    <figure><img src="knowledge-light.png" alt="Knowledge: ask a question of the team's documents and recordings, with questions to start from" width="1280" height="800" /><figcaption>Knowledge: answers cite their sources</figcaption></figure>
+    <figure><img src="phone.png" alt="Home on a phone" width="390" height="844" /><figcaption>On a phone</figcaption></figure>
+  </div>
+
+  <section>
+    <h2>What it does</h2>
+    <div class="cards">
+      <div class="card"><h3>Playground</h3><p>Text, images, video, speech, music and transcripts, on any model in the live catalog. Compare two models; see the time, usage and cost of each.</p></div>
+      <div class="card"><h3>Recipes</h3><p>Chain steps into a form anyone can run: the Product launch kit makes copy, a hero image, a clip, a voiceover and a music bed in one go.</p></div>
+      <div class="card"><h3>Library</h3><p>Every output with its prompt, model, settings, maker and cost. Drafts until someone approves them for use.</p></div>
+      <div class="card"><h3>Knowledge</h3><p>Add PDFs, notes and call recordings. Ask answers only from them and cites each passage; a recording plays from the moment it quotes.</p></div>
+      <div class="card"><h3>Budgets and approvals</h3><p>A monthly budget for the team and each person, an approval line, and a price table admins edit. Every model call passes the same gate.</p></div>
+      <div class="card"><h3>Easel and your agents</h3><p>Easel, the in-app assistant, and Claude, ChatGPT or your own code use the same eight tools, with the person's own budget.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>The first minute</h2>
+    <ol>
+      <li>Click <strong>Continue as Jordan Lee</strong>. Home shows the month's spend, two runs waiting for Jordan, and a sample clip finishing.</li>
+      <li>Open <strong>Recipes</strong> and run <strong>Product page copy and photo</strong>: the copy, then a studio photo from it. It runs on the Free plan.</li>
+      <li>Open <strong>Library</strong>: both are drafts with their full record. Approve one for use.</li>
+      <li>Open <strong>Knowledge</strong> and ask what riders say about Trail 2 sizing. The answer cites the size guide and a customer call.</li>
+      <li>Open <strong>Usage</strong>: the month by person, kind and model, against the budgets.</li>
+    </ol>
+  </section>
+
+  <section id="use">
+    <h2>Use this template</h2>
+<pre><code>git clone https://github.com/xano-community/atelier-ai-studio
+cd atelier-ai-studio
+npm install
+npm run xano:deploy   # the backend on the Xano Engine on your machine, seeded
+npm run dev           # the app</code></pre>
+    <p>No account is needed to browse the seeded studio. To run models, sign in once with <code>npx @xano/sdk login</code> before you deploy: calls use your Xano AI credits. For a cloud link that works with ChatGPT and Claude, run <code>npm run xano:deploy:ephemeral</code>.</p>
+    <h3>Or hand it to your coding agent</h3>
+<pre><code>Clone https://github.com/xano-community/atelier-ai-studio, read its README and AGENTS.md,
+run it on the Xano Engine, and sign in as Jordan Lee. Then add a recipe step
+kind following "Extend it" in the README.</code></pre>
+  </section>
+
+  <section>
+    <h2>Roles</h2>
+    <div class="table"><table>
+      <thead><tr><th>Role</th><th>Can</th></tr></thead>
+      <tbody>
+        <tr><td><strong>admin</strong></td><td>Everything a member can, plus budgets, the approval line, prices, Usage and the team</td></tr>
+        <tr><td><strong>member</strong></td><td>Run the Playground and recipes, make recipes, add Knowledge sources, approve Library items. A video, or a run above the line, waits for an admin</td></tr>
+        <tr><td><strong>guest</strong></td><td>See approved Library items and ask Knowledge. Nothing else runs</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2>API surface</h2>
+    <div class="table"><table>
+      <thead><tr><th>Route</th><th>Who</th><th>Enforces</th></tr></thead>
+      <tbody>
+        <tr><td><code>POST /api:studio/runs</code></td><td>member</td><td>The spend gate, the approval line, a run key</td></tr>
+        <tr><td><code>POST /api:studio/recipes/{slug}/run</code></td><td>a person's agent key</td><td>The same gate; <code>Idempotency-Key</code> returns the first run</td></tr>
+        <tr><td><code>GET /api:library/assets</code></td><td>everyone</td><td>Guests see approved items only</td></tr>
+        <tr><td><code>POST /api:library/assets/{id}/approve</code></td><td>member</td><td>Records who approved it and when</td></tr>
+        <tr><td><code>POST /api:knowledge/sources</code></td><td>member</td><td>Files up to 20 MB, read once and embedded</td></tr>
+        <tr><td><code>POST /api:knowledge/ask</code></td><td>everyone</td><td>Answers cite only the passages they were given</td></tr>
+        <tr><td><code>GET /api:studio/usage</code>, <code>PATCH /budgets</code></td><td>admin</td><td>Totals add up to the settled ledger</td></tr>
+      </tbody>
+    </table></div>
+    <p>The README lists the main routes.</p>
+  </section>
+
+  <section>
+    <h2>Limits</h2>
+    <ul>
+      <li>Costs are estimates from Atelier's price table: Xano AI returns usage, not cost.</li>
+      <li>Ask orders passages by similarity, and uses rerank when the catalog has a priced rerank model.</li>
+      <li>Easel needs your own Anthropic or Google key until Xano AI agents with tools run on the Router.</li>
+      <li>The app runs on the Xano Engine on your machine and on Xano's cloud. The AI statements need a Xano instance with Xano AI.</li>
+    </ul>
+  </section>
+
+  <footer>Built with <a href="https://xano.com">Xano</a> and the <a href="https://github.com/xano-sdk/sdk">Xano SDK</a>. MIT licensed.</footer>
+</div>
+</body>
+</html>

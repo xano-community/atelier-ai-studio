@@ -1,0 +1,4 @@
+[
+  { "name": "auth/status", "reason": "The sign-in screen asks whether this backend needs its first admin, before anyone has a token. It reads the settings row and answers one boolean and the workspace's name." },
+  { "name": "auth/setup", "setup": true, "reason": "A production deploy has no accounts, so the first admin has no token to sign in with. It writes and mints only with the backend's SETUP_TOKEN, which nobody but the deployer holds, and only until a settings row exists." }
+]
